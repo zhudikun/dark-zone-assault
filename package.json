@@ -1,0 +1,29 @@
+{
+  "name": "dark-zone-assault",
+  "version": "1.0.0",
+  "description": "Dark Zone Assault - 3D FPS Wave Survival",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^41.4.0",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.darkzone.assault",
+    "productName": "Dark Zone Assault",
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.games"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ]
+  }
+}
